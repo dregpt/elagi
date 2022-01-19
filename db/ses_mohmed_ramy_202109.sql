@@ -1,0 +1,122 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Sep 04, 2021 at 08:34 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.3.26
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ptpedia`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ses`
+--
+
+CREATE TABLE `ses` (
+  `ses_id` int(50) NOT NULL,
+  `cas_id` int(32) DEFAULT NULL,
+  `thrp_id` int(32) DEFAULT NULL,
+  `srv_cd` varchar(5) DEFAULT NULL,
+  `ses_day` varchar(32) DEFAULT NULL,
+  `ses_rc_day` varchar(100) DEFAULT NULL,
+  `ses_rf_tm` varchar(100) DEFAULT NULL,
+  `ses_rc_strt` varchar(100) DEFAULT NULL,
+  `ses_rc_end` varchar(100) DEFAULT NULL,
+  `attend_tm` varchar(100) DEFAULT NULL,
+  `stat` int(5) NOT NULL DEFAULT 0,
+  `rebook_stat` int(2) NOT NULL DEFAULT 1,
+  `price_stat` int(2) NOT NULL DEFAULT 1,
+  `rglr_price` int(10) NOT NULL DEFAULT 0,
+  `sngl_price` int(10) NOT NULL DEFAULT 0,
+  `exc_fine` int(5) NOT NULL DEFAULT 0,
+  `abs_fine` int(5) NOT NULL DEFAULT 0,
+  `nt` int(2) DEFAULT NULL,
+  `note` varchar(1024) DEFAULT NULL,
+  `submitter` int(23) DEFAULT NULL,
+  `submit_timestamp` int(15) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ses`
+--
+
+INSERT INTO `ses` (`ses_id`, `cas_id`, `thrp_id`, `srv_cd`, `ses_day`, `ses_rc_day`, `ses_rf_tm`, `ses_rc_strt`, `ses_rc_end`, `attend_tm`, `stat`, `rebook_stat`, `price_stat`, `rglr_price`, `sngl_price`, `exc_fine`, `abs_fine`, `nt`, `note`, `submitter`, `submit_timestamp`) VALUES
+(11048, 268, NULL, 'PT', '2021-09-05', '2021-09-05', '12:30', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11049, 268, NULL, 'UG', '2021-09-05', '2021-09-05', '14:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11050, 268, NULL, 'OT', '2021-09-05', '2021-09-05', '11:30', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11051, 268, NULL, 'PT', '2021-09-12', '2021-09-12', '12:30', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11052, 268, NULL, 'UG', '2021-09-12', '2021-09-12', '14:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11053, 268, NULL, 'OT', '2021-09-12', '2021-09-12', '11:30', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11054, 268, NULL, 'PT', '2021-09-19', '2021-09-19', '12:30', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11055, 268, NULL, 'UG', '2021-09-19', '2021-09-19', '14:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11056, 268, NULL, 'OT', '2021-09-19', '2021-09-19', '11:30', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11057, 268, NULL, 'PT', '2021-09-26', '2021-09-26', '12:30', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11058, 268, NULL, 'UG', '2021-09-26', '2021-09-26', '14:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11059, 268, NULL, 'OT', '2021-09-26', '2021-09-26', '11:30', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11060, 268, NULL, 'PT', '2021-09-07', '2021-09-07', '12:30', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11061, 268, NULL, 'UG', '2021-09-07', '2021-09-07', '14:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11062, 268, NULL, 'OT', '2021-09-07', '2021-09-07', '11:30', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11063, 268, NULL, 'PT', '2021-09-14', '2021-09-14', '12:30', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11064, 268, NULL, 'UG', '2021-09-14', '2021-09-14', '14:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11065, 268, NULL, 'OT', '2021-09-14', '2021-09-14', '11:30', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11066, 268, NULL, 'PT', '2021-09-21', '2021-09-21', '12:30', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11067, 268, NULL, 'UG', '2021-09-21', '2021-09-21', '14:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11068, 268, NULL, 'OT', '2021-09-21', '2021-09-21', '11:30', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11069, 268, NULL, 'PT', '2021-09-28', '2021-09-28', '12:30', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11070, 268, NULL, 'UG', '2021-09-28', '2021-09-28', '14:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11071, 268, NULL, 'OT', '2021-09-28', '2021-09-28', '11:30', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11072, 268, 226, 'PT', '2021-09-02', '2021-09-02', '14:00', '14:07', '15:32', '14:04', 1, 1, 1, 120, 150, 30, 60, NULL, '', 327, 1630589562),
+(11073, 268, 225, 'UG', '2021-09-02', '2021-09-02', '13:00', '13:04', '14:04', '13:04', 1, 1, 1, 90, 120, 30, 45, NULL, '', 46, 1630584295),
+(11074, 268, 225, 'OT', '2021-09-02', '2021-09-02', '12:00', '12:04', '13:04', '11:45', 1, 1, 1, 90, 150, 30, 50, NULL, '', 46, 1630580683),
+(11075, 268, NULL, 'PT', '2021-09-09', '2021-09-09', '14:00', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11076, 268, NULL, 'UG', '2021-09-09', '2021-09-09', '13:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11077, 268, NULL, 'OT', '2021-09-09', '2021-09-09', '12:00', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11078, 268, NULL, 'PT', '2021-09-16', '2021-09-16', '14:00', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11079, 268, NULL, 'UG', '2021-09-16', '2021-09-16', '13:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11080, 268, NULL, 'OT', '2021-09-16', '2021-09-16', '12:00', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11081, 268, NULL, 'PT', '2021-09-23', '2021-09-23', '14:00', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11082, 268, NULL, 'UG', '2021-09-23', '2021-09-23', '13:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11083, 268, NULL, 'OT', '2021-09-23', '2021-09-23', '12:00', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL),
+(11084, 268, NULL, 'PT', '2021-09-30', '2021-09-30', '14:00', NULL, NULL, NULL, 0, 1, 1, 120, 150, 30, 60, NULL, NULL, NULL, NULL),
+(11085, 268, NULL, 'UG', '2021-09-30', '2021-09-30', '13:00', NULL, NULL, NULL, 0, 1, 1, 90, 120, 30, 45, NULL, NULL, NULL, NULL),
+(11086, 268, NULL, 'OT', '2021-09-30', '2021-09-30', '12:00', NULL, NULL, NULL, 0, 1, 1, 90, 150, 30, 50, NULL, NULL, NULL, NULL);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `ses`
+--
+ALTER TABLE `ses`
+  ADD PRIMARY KEY (`ses_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `ses`
+--
+ALTER TABLE `ses`
+  MODIFY `ses_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12230;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

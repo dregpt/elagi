@@ -1,0 +1,192 @@
+/* CSS Document */
+
+
+.userrow > * {
+	display: inline-block;
+}
+
+.userrow{
+	width:100%;
+	border-bottom: 1px solid #393939;
+	border-top: 1px solid #393939;
+}
+
+.userrow:hover{
+	border-bottom: 1px solid #A9A9A9;
+	border-top: 1px solid #A9A9A9;
+	background: #333333;
+	cursor: pointer;
+}
+
+
+.sessions{
+	display:block; 
+    border-right: medium;
+    /*border-right-color: #484848;*/
+    /*border-right-style: solid;*/
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 710px;
+}
+
+.session{
+	background: #2B2B2B;
+	font-size: 15px;
+    border: 2px ridge #545454;
+	border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 0px 3px 1px black;
+    padding: 5px;
+}
+
+.session:hover{
+	background: #2E2E23;
+    border: 2px solid #545454;
+    cursor: pointer;
+}
+
+.sessiontaken {
+	background: #2B2B2B;
+	font-size: 13px;
+    border: 1px ridge #B1E0FA;
+	border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 0px 3px 1px black;
+    padding: 5px;
+	color: #B1E0FA;
+}
+
+.sestimetkn{
+	float: right;
+	font-style: italic;
+	color: #B1E0FA;
+}
+
+
+.sessiontaken:hover{
+	background: #2E2E23;
+    border: 2px solid #B1E0FA;
+    cursor: pointer;
+}
+
+.sessionexcuse{
+	background: #2B2B2B;
+	font-size: 13px;
+    border: 1px ridge #FAA4A4;
+	border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 0px 3px 1px black;
+    padding: 5px;
+	color: #FAA4A4;
+}
+
+.sestimeexc{
+	float: right;
+	font-style: italic;
+    color:#FAA4A4;
+}
+
+.sessionexcuse:hover{
+	background: #2E2E23;
+    border: 2px solid #FAA4A4;
+    cursor: pointer;
+}
+
+.sessionabsence{
+	background: #2B2B2B;
+	font-size: 13px;
+    border: 1px ridge #FCA66D;
+	border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 0px 3px 1px black;
+    padding: 5px;
+	color: #FCA66D;
+}
+
+.sessionabsence:hover{
+	background: #2E2E23;
+    border: 2px solid #FC8F46;
+    cursor: pointer;
+}
+
+.sestimeabc{
+	float: right;
+	font-style: italic;
+    color:#FCA66D;
+}
+
+.sessioncancell{
+	background: #2B2B2B;
+	font-size: 13px;
+    border: 1px ridge #FAFCA7;
+	border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 0px 3px 1px black;
+    padding: 5px;
+	color: #FAFCA7;
+}
+
+.sessioncancell:hover{
+	background: #2E2E23;
+    border: 2px solid #FAFCA7;
+    cursor: pointer;
+}
+
+.sestimecanc{
+	float: right;
+	font-style: italic;
+    color:#FAFCA7;
+}
+
+
+.sesrow1{
+	border-top: 1px solid #4D4D4D;
+
+	
+}
+
+
+
+.sesrow > *, .sesrow1 > *{
+	display: inline-block;
+}
+
+.topsesrow{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sesno{
+    border: 3px groove #8888;
+    border-radius: 10px;
+    padding: auto;
+	font-weight: bold; 
+}
+
+.sestype{
+	font-weight: bold; 
+}
+
+.sestime{
+	float: right;
+	font-style: italic;
+	color:beige;
+}
+
+
+.sestherp{
+}
+
+.sesmodr{
+	float:right;
+}
+
+input[type="time"] {
+    margin-left: 0px;
+}
+

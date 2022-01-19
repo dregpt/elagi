@@ -1,0 +1,99 @@
+
+body{
+    padding: 3px;
+    background-color: #dae0e5;
+    color: #0066cc;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 3em;
+}
+
+div{
+    padding: 3px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul{
+    margin: 0px;
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+input, textarea, select{
+    font-family: inherit;
+    font-size: 100%;
+    color: #4D4D4D;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: .5em;
+    width:90%;
+    margin: .5em auto .5em auto ;
+    height: 2.2em;
+    padding: .5em;
+}
+
+input[type='text'],input[type='email'],input[type='password']{
+    border-style: solid;
+    border: rgba(150,185,220,0.75) .05em solid;
+}
+
+input[type='submit'], input[type='button']{
+    background: rgba(193, 222, 253, 0.75);
+    border: rgba(150,185,220,0.75) .07em solid;
+    color: inherit;
+    cursor: pointer;
+}
+input[type='submit']:active, input[type='button']:active{
+    background: #fff;
+
+}
+
+label{
+    display: block;
+}
+
+fieldset{
+    border: none;
+    /*border-radius: .5em;*/
+    /*border: rgba(150,185,220,0.75) .07em solid;*/
+}
+
+.mobsite{
+    padding: .5em;
+    border-radius: .8em;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 3px #84acc2;
+    width: 16em;
+    margin: auto;
+
+}
+
+.orangefont{
+  color: rgba(255, 64, 0, 0.75);
+}
+
+#logo{
+
+    background: #484848;
+    width:3em;
+    border: none;
+    border-radius: .5em;
+
+}
+
+.block{
+    display: block;
+}
+
+.message{
+    display: block;
+    position: relative;
+    width: 94%;
+    color: coral;
+    text-align: center;
+}
